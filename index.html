@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المحامية نوف الثبيتي - حماية حقوقك بكل احترافية</title>
+    <meta name="description" content="محامية متخصصة في القانون المدني والجنائي والأحوال الشخصية">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile-enhancements.css">
+</head>
+<body>
+    
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <i class="fas fa-balance-scale"></i>
+                <span>المحامية نوف الثبيتي</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                <li><a href="#practice-areas" class="nav-link">التخصصات</a></li>
+                <li><a href="#about" class="nav-link">لماذا نحن</a></li>
+                <li><a href="#about-lawyer" class="nav-link">عن المحامية</a></li>
+                <li><a href="#testimonials" class="nav-link">آراء العملاء</a></li>
+                <li><a href="#blog" class="nav-link">المدونة</a></li>
+                <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="btn btn-primary" onclick="openConsultationModal()">
+                    <i class="fas fa-calendar-check"></i>
+                    طلب استشارة
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container" data-aos="fade-up">
+            <h1 class="hero-title">أحمي حقوقك بكل أمانة واحترافية</h1>
+            <p class="hero-subtitle">المحامية نوف الثبيتي | خبرة قانونية متميزة | التزام تام بالمعايير الأخلاقية والمهنية</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-lg" onclick="openConsultationModal()">
+                    <i class="fas fa-phone-alt"></i>
+                    احجز موعد الآن
+                </button>
+                <a href="#contact" class="btn btn-outline btn-lg">
+                    <i class="fas fa-envelope"></i>
+                    اتصل بنا
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="stat-number" data-target="15">0</h3>
+                    <p class="stat-label">سنة خبرة</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="stat-number" data-target="500">0</h3>
+                    <p class="stat-label">قضية ناجحة</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="stat-number" data-target="95">0</h3>
+                    <p class="stat-label">% نسبة النجاح</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#practice-areas">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Practice Areas Section -->
+    <section class="practice-areas" id="practice-areas">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">مجالات التخصص</h2>
+                <p class="section-subtitle">نقدم خدمات قانونية شاملة في مختلف المجالات</p>
+            </div>
+            
+            <div class="practice-grid">
+                <div class="practice-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="practice-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3 class="practice-title">القانون المدني</h3>
+                    <p class="practice-description">قضايا العقود والتعويضات والملكية والإيجارات وكافة المنازعات المدنية</p>
+                    <a href="#" class="practice-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <div class="practice-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="practice-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="practice-title">قانون الأحوال الشخصية</h3>
+                    <p class="practice-description">قضايا الزواج والطلاق والحضانة والنفقة والميراث</p>
+                    <a href="#" class="practice-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <div class="practice-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="practice-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="practice-title">القضايا الجنائية</h3>
+                    <p class="practice-description">الدفاع في القضايا الجنائية بكافة أنواعها والتمثيل أمام المحاكم</p>
+                    <a href="#" class="practice-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <div class="practice-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="practice-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="practice-title">قضايا الشركات</h3>
+                    <p class="practice-description">تأسيس الشركات والعقود التجارية والمنازعات التجارية والإفلاس</p>
+                    <a href="#" class="practice-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <div class="practice-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="practice-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="practice-title">قانون العمل</h3>
+                    <p class="practice-description">قضايا العمل والفصل التعسفي ومستحقات العمال وتعويضات العمل</p>
+                    <a href="#" class="practice-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+
+                <div class="practice-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="practice-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="practice-title">القضايا العقارية</h3>
+                    <p class="practice-description">التسجيل العقاري والملكية والبيع والشراء والنزاعات العقارية</p>
+                    <a href="#" class="practice-link">اعرف المزيد <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">لماذا تختارنا؟</h2>
+                <p class="section-subtitle">نتميز بالاحترافية والخبرة والالتزام بمصلحة عملائنا</p>
+            </div>
+            
+            <div class="why-us-grid">
+                <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="why-title">خبرة واسعة</h3>
+                    <p class="why-description">أكثر من 15 عاماً من الخبرة في مختلف المجالات القانونية</p>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="why-title">سرية تامة</h3>
+                    <p class="why-description">نحافظ على سرية معلومات عملائنا بشكل كامل ومطلق</p>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="why-title">نسبة نجاح عالية</h3>
+                    <p class="why-description">نسبة نجاح تصل إلى 95% في القضايا التي نتولاها</p>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="why-title">دعم مستمر</h3>
+                    <p class="why-description">دعم قانوني متواصل ومتابعة دقيقة لجميع القضايا</p>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="why-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="why-title">أسعار عادلة</h3>
+                    <p class="why-description">أتعاب قانونية واضحة وعادلة بدون رسوم خفية</p>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="why-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="why-title">حلول إبداعية</h3>
+                    <p class="why-description">نقدم حلولاً قانونية مبتكرة تناسب احتياجاتك الخاصة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Lawyer Section -->
+    <section class="team" id="about-lawyer">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">عن المحامية</h2>
+                <p class="section-subtitle">نوف الثبيتي - محامية مرخصة ومتخصصة</p>
+            </div>
+            
+            <div class="lawyer-profile">
+                <div class="lawyer-card-no-image" data-aos="fade-up" data-aos-delay="100">
+                    <div class="lawyer-header">
+                        <div class="lawyer-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="lawyer-title-section">
+                            <h3 class="lawyer-name">أ. نوف الثبيتي</h3>
+                            <p class="lawyer-position">محامية ومستشارة قانونية</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lawyer-social-links">
+                        <a href="#" title="لينكد إن" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="تويتر" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#contact" title="راسلني" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/966501234567" title="واتساب" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    
+                    <div class="lawyer-content">
+                        <p class="lawyer-description">
+                            ماجستير في القانون - خبرة 15 عاماً في مختلف المجالات القانونية<br>
+                            عضو نقابة المحامين السعوديين - مرخصة من وزارة العدل<br>
+                            متخصصة في القانون المدني والجنائي والأحوال الشخصية وقضايا الشركات
+                        </p>
+                        <div class="lawyer-specialties">
+                            <span class="specialty-tag">القانون المدني</span>
+                            <span class="specialty-tag">القانون الجنائي</span>
+                            <span class="specialty-tag">الأحوال الشخصية</span>
+                            <span class="specialty-tag">قانون الشركات</span>
+                            <span class="specialty-tag">القضايا العقارية</span>
+                            <span class="specialty-tag">قانون العمل</span>
+                        </div>
+                        <div class="lawyer-achievements">
+                            <h4>الإنجازات والشهادات</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> أكثر من 500 قضية ناجحة</li>
+                                <li><i class="fas fa-check-circle"></i> نسبة نجاح 95% في القضايا</li>
+                                <li><i class="fas fa-check-circle"></i> عضو هيئة المحامين الدوليين</li>
+                                <li><i class="fas fa-check-circle"></i> متحدثة في عدة مؤتمرات قانونية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">آراء عملائنا</h2>
+                <p class="section-subtitle">ثقة عملائنا هي أكبر نجاح لنا</p>
+            </div>
+            
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card active" data-aos="fade-up">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"تجربة رائعة مع الأستاذة نوف، تعاملت مع قضيتي باحترافية عالية وتم حلها بشكل سريع. أنصح الجميع بالتعامل معها."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">محمد أحمد</h4>
+                            <p class="author-position">رجل أعمال</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"خبرة ممتازة ومعاملة راقية، الأستاذة نوف محامية متمكنة ومتعاونة جداً. حصلت على حقي كاملاً."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">سارة علي</h4>
+                            <p class="author-position">موظفة</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"محامية محترفة بكل المقاييس. سرعة في الإنجاز، شفافية في التعامل، وأسعار عادلة. شكراً لك أستاذة نوف."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">يوسف حسين</h4>
+                            <p class="author-position">مهندس</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn prev" onclick="changeTestimonial(-1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="slider-dots" id="sliderDots"></div>
+                <button class="slider-btn next" onclick="changeTestimonial(1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">المدونة القانونية</h2>
+                <p class="section-subtitle">آخر الأخبار والمقالات القانونية</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600" alt="مقال قانوني">
+                        <div class="blog-category">قانون مدني</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 5 فبراير 2026</span>
+                            <span><i class="fas fa-user"></i> أ. نوف الثبيتي</span>
+                        </div>
+                        <h3 class="blog-title">التعديلات الجديدة في قانون الإيجارات لعام 2026</h3>
+                        <p class="blog-excerpt">شرح تفصيلي للتعديلات الجديدة التي طرأت على قانون الإيجارات وتأثيرها على حقوق المستأجرين والملاك...</p>
+                        <a href="#" class="blog-link" onclick="openBlogArticle(event, 'article1')">قراءة المزيد <i class="fas fa-arrow-left"></i></a>
+                        <div class="blog-full-content" id="article1" style="display: none;">
+                            <h2>التعديلات الجديدة في قانون الإيجارات لعام 2026</h2>
+                            <div class="article-meta">
+                                <span><i class="fas fa-calendar"></i> 5 فبراير 2026</span>
+                                <span><i class="fas fa-user"></i> أ. نوف الثبيتي</span>
+                                <span><i class="fas fa-tag"></i> قانون مدني</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800" alt="التعديلات الجديدة في قانون الإيجارات" class="article-image">
+                            
+                            <h3>مقدمة</h3>
+                            <p>شهد عام 2026 تعديلات جوهرية على قانون الإيجارات في المملكة العربية السعودية، والتي تهدف إلى تحقيق التوازن بين حقوق المستأجرين وحقوق الملاك، وتنظيم العلاقة الإيجارية بشكل أكثر عدالة ووضوحاً.</p>
+                            
+                            <h3>أبرز التعديلات الجديدة</h3>
+                            <h4>1. تنظيم زيادة الإيجار</h4>
+                            <p>حدد القانون الجديد نسبة الزيادة السنوية للإيجار بحد أقصى 15% من قيمة الإيجار الحالي، مع ضرورة إشعار المستأجر قبل 90 يوماً من موعد التجديد.</p>
+                            
+                            <h4>2. مدة عقد الإيجار</h4>
+                            <p>أصبحت الحد الأدنى لمدة عقد الإيجار السكني سنة واحدة، مع إمكانية التجديد التلقائي ما لم يعترض أحد الطرفين كتابياً.</p>
+                            
+                            <h4>3. حقوق المستأجر</h4>
+                            <ul>
+                                <li>حق المستأجر في الحصول على عقد إيجار موثق إلكترونياً</li>
+                                <li>عدم جواز طرد المستأجر إلا بحكم قضائي</li>
+                                <li>حق المستأجر في إجراء الصيانة الضرورية وخصم تكلفتها من الإيجار</li>
+                                <li>حماية المستأجر من الزيادات التعسفية في الإيجار</li>
+                            </ul>
+                            
+                            <h4>4. واجبات المالك</h4>
+                            <ul>
+                                <li>الالتزام بتسليم العين المؤجرة في حالة صالحة للاستعمال</li>
+                                <li>القيام بالصيانة الأساسية والإصلاحات الضرورية</li>
+                                <li>عدم التدخل في استعمال المستأجر للعين المؤجرة</li>
+                                <li>الالتزام بإشعار المستأجر قبل الدخول إلى العقار</li>
+                            </ul>
+                            
+                            <h3>آلية حل النزاعات</h3>
+                            <p>استحدث القانون لجاناً متخصصة لحل النزاعات الإيجارية بطريقة سريعة وعادلة، مع إمكانية الاستئناف أمام المحاكم المختصة.</p>
+                            
+                            <h3>العقوبات</h3>
+                            <p>فرض القانون غرامات مالية تتراوح بين 5,000 إلى 50,000 ريال على المخالفين، مع إمكانية مضاعفة العقوبة في حالة التكرار.</p>
+                            
+                            <h3>الخلاصة</h3>
+                            <p>تمثل هذه التعديلات خطوة إيجابية نحو تنظيم السوق العقاري وحماية حقوق جميع الأطراف. ننصح بمراجعة محامٍ متخصص لفهم تفاصيل القانون وتطبيقه على حالتك الخاصة.</p>
+                            
+                            <div class="article-footer">
+                                <p><strong>للاستشارات القانونية المتعلقة بقانون الإيجارات، يمكنكم التواصل معنا.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600" alt="مقال قانوني">
+                        <div class="blog-category">قانون الشركات</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 1 فبراير 2026</span>
+                            <span><i class="fas fa-user"></i> أ. نوف الثبيتي</span>
+                        </div>
+                        <h3 class="blog-title">دليل شامل لتأسيس شركة ذات مسؤولية محدودة</h3>
+                        <p class="blog-excerpt">خطوات عملية ونصائح قانونية لتأسيس شركتك الخاصة وفق الأنظمة والقوانين المعمول بها...</p>
+                        <a href="#" class="blog-link" onclick="openBlogArticle(event, 'article2')">قراءة المزيد <i class="fas fa-arrow-left"></i></a>
+                        <div class="blog-full-content" id="article2" style="display: none;">
+                            <h2>دليل شامل لتأسيس شركة ذات مسؤولية محدودة</h2>
+                            <div class="article-meta">
+                                <span><i class="fas fa-calendar"></i> 1 فبراير 2026</span>
+                                <span><i class="fas fa-user"></i> أ. نوف الثبيتي</span>
+                                <span><i class="fas fa-tag"></i> قانون الشركات</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800" alt="تأسيس شركة" class="article-image">
+                            
+                            <h3>مقدمة</h3>
+                            <p>تأسيس شركة ذات مسؤولية محدودة هو خيار مثالي لرواد الأعمال الذين يرغبون في حماية أموالهم الشخصية وتنظيم أعمالهم بشكل قانوني. في هذا الدليل، سنوضح لكم الخطوات العملية والمتطلبات القانونية.</p>
+                            
+                            <h3>ما هي الشركة ذات المسؤولية المحدودة؟</h3>
+                            <p>هي شركة تجارية يتكون رأسمالها من حصص متساوية القيمة قابلة للتداول، ولا يكون الشركاء مسؤولين عن ديون الشركة إلا بمقدار حصصهم في رأس المال.</p>
+                            
+                            <h3>المزايا الرئيسية</h3>
+                            <ul>
+                                <li>محدودية المسؤولية: حماية الأموال الشخصية للشركاء</li>
+                                <li>المرونة في الإدارة: إمكانية إدارتها من قبل الشركاء أو مديرين محترفين</li>
+                                <li>سهولة نقل الملكية: إمكانية بيع الحصص للغير</li>
+                                <li>الاستقلالية المالية: فصل أموال الشركة عن أموال الشركاء</li>
+                            </ul>
+                            
+                            <h3>خطوات التأسيس</h3>
+                            <h4>1. اختيار الاسم التجاري</h4>
+                            <p>يجب أن يكون الاسم فريداً وغير مشابه لأسماء شركات قائمة، ويمكن حجزه من خلال منصة "قِوام" التابعة لوزارة التجارة.</p>
+                            
+                            <h4>2. إعداد عقد التأسيس</h4>
+                            <p>يجب أن يتضمن عقد التأسيس:</p>
+                            <ul>
+                                <li>أسماء الشركاء وبياناتهم</li>
+                                <li>اسم الشركة ونشاطها</li>
+                                <li>رأس المال وحصص الشركاء</li>
+                                <li>مدة الشركة</li>
+                                <li>طريقة الإدارة واتخاذ القرارات</li>
+                            </ul>
+                            
+                            <h4>3. المتطلبات المالية</h4>
+                            <p>الحد الأدنى لرأس المال غير محدد قانونياً، لكن يجب أن يكون كافياً لمزاولة النشاط.</p>
+                            
+                            <h4>4. الإجراءات الإلكترونية</h4>
+                            <p>يتم التأسيس بالكامل عبر منصة "قِوام" الإلكترونية، ويشمل ذلك:</p>
+                            <ul>
+                                <li>تقديم طلب التأسيس</li>
+                                <li>توثيق العقد</li>
+                                <li>الحصول على السجل التجاري</li>
+                                <li>استخراج الرخصة البلدية</li>
+                            </ul>
+                            
+                            <h3>الوثائق المطلوبة</h3>
+                            <ul>
+                                <li>نسخ من الهويات الوطنية للشركاء السعوديين</li>
+                                <li>نسخ من الإقامات للشركاء غير السعوديين</li>
+                                <li>عقد التأسيس والنظام الأساسي</li>
+                                <li>إثبات عنوان الشركة (عقد إيجار أو ملكية)</li>
+                            </ul>
+                            
+                            <h3>التكاليف التقريبية</h3>
+                            <ul>
+                                <li>رسوم حجز الاسم التجاري: 200 ريال</li>
+                                <li>رسوم السجل التجاري: 600 ريال سنوياً</li>
+                                <li>رسوم الرخصة البلدية: حسب النشاط</li>
+                                <li>رسوم الغرفة التجارية: 600 ريال سنوياً</li>
+                            </ul>
+                            
+                            <h3>نصائح مهمة</h3>
+                            <ol>
+                                <li>استشر محامياً متخصصاً في صياغة عقد التأسيس</li>
+                                <li>اختر شركاء موثوقين واتفق معهم على كل التفاصيل كتابياً</li>
+                                <li>احرص على فتح حساب بنكي باسم الشركة</li>
+                                <li>احتفظ بسجلات مالية منتظمة ومنظمة</li>
+                                <li>التزم بتجديد التراخيص والسجلات في مواعيدها</li>
+                            </ol>
+                            
+                            <h3>الخلاصة</h3>
+                            <p>تأسيس شركة ذات مسؤولية محدودة أصبح أسهل من أي وقت مضى بفضل التحول الرقمي، لكن يبقى الحصول على استشارة قانونية متخصصة أمراً ضرورياً لضمان سير الأمور بشكل صحيح وتجنب المشاكل المستقبلية.</p>
+                            
+                            <div class="article-footer">
+                                <p><strong>نقدم خدمات قانونية متكاملة لتأسيس الشركات. تواصل معنا للحصول على استشارة مجانية.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=600" alt="مقال قانوني">
+                        <div class="blog-category">نصائح قانونية</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 28 يناير 2026</span>
+                            <span><i class="fas fa-user"></i> أ. نوف الثبيتي</span>
+                        </div>
+                        <h3 class="blog-title">حقوقك القانونية في حالات الطلاق والحضانة</h3>
+                        <p class="blog-excerpt">معلومات قانونية مهمة حول حقوق الزوجين والأطفال في قضايا الأحوال الشخصية...</p>
+                        <a href="#" class="blog-link" onclick="openBlogArticle(event, 'article3')">قراءة المزيد <i class="fas fa-arrow-left"></i></a>
+                        <div class="blog-full-content" id="article3" style="display: none;">
+                            <h2>حقوقك القانونية في حالات الطلاق والحضانة</h2>
+                            <div class="article-meta">
+                                <span><i class="fas fa-calendar"></i> 28 يناير 2026</span>
+                                <span><i class="fas fa-user"></i> أ. نوف الثبيتي</span>
+                                <span><i class="fas fa-tag"></i> نصائح قانونية</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800" alt="قانون الأحوال الشخصية" class="article-image">
+                            
+                            <h3>مقدمة</h3>
+                            <p>قضايا الطلاق والحضانة من أكثر القضايا حساسية في قانون الأحوال الشخصية، حيث تتعلق بمستقبل الأسرة والأطفال. في هذا المقال، نوضح أهم الحقوق والواجبات القانونية.</p>
+                            
+                            <h3>أنواع الطلاق في النظام السعودي</h3>
+                            <h4>1. الطلاق الرجعي</h4>
+                            <p>يحق للزوج فيه مراجعة زوجته خلال فترة العدة دون عقد جديد.</p>
+                            
+                            <h4>2. الطلاق البائن بينونة صغرى</h4>
+                            <p>لا يمكن للزوج مراجعة زوجته إلا بعقد ومهر جديدين.</p>
+                            
+                            <h4>3. الطلاق البائن بينونة كبرى</h4>
+                            <p>بعد الطلقة الثالثة، ولا يمكن للزوج الزواج من مطلقته إلا بعد زواجها من زوج آخر وطلاقها منه.</p>
+                            
+                            <h3>حقوق الزوجة المطلقة</h3>
+                            <h4>الحقوق المالية</h4>
+                            <ul>
+                                <li><strong>المهر المؤجل:</strong> إن وُجد في عقد الزواج</li>
+                                <li><strong>نفقة العدة:</strong> لمدة ثلاثة أشهر أو حتى وضع الحمل</li>
+                                <li><strong>المتعة:</strong> تعويض مالي حسب حال الزوج</li>
+                                <li><strong>أجرة الحضانة:</strong> إذا كان لديها أطفال</li>
+                                <li><strong>أجرة الرضاعة:</strong> للأطفال الرضع</li>
+                                <li><strong>نفقة الأطفال:</strong> مسؤولية الأب حتى سن معينة</li>
+                            </ul>
+                            
+                            <h4>الحقوق غير المالية</h4>
+                            <ul>
+                                <li>حق الحضانة للأطفال</li>
+                                <li>حق السكن المناسب للحاضنة</li>
+                                <li>حق احتفاظها بأثاثها الخاص</li>
+                            </ul>
+                            
+                            <h3>حق الحضانة</h3>
+                            <h4>أولوية الحضانة</h4>
+                            <p>تبدأ بالأم، ثم أم الأم، ثم أم الأب، ثم الأب، وهكذا حسب الترتيب الشرعي.</p>
+                            
+                            <h4>مدة الحضانة</h4>
+                            <ul>
+                                <li>للأم حضانة الأطفال حتى سن 15 عاماً</li>
+                                <li>بعد ذلك يُخيّر الطفل بين والديه</li>
+                                <li>يمكن تمديد الحضانة بقرار من المحكمة</li>
+                            </ul>
+                            
+                            <h4>شروط الحضانة</h4>
+                            <ul>
+                                <li>البلوغ والعقل</li>
+                                <li>القدرة على رعاية المحضون</li>
+                                <li>الأمانة والاستقامة</li>
+                                <li>السلامة من الأمراض المعدية</li>
+                            </ul>
+                            
+                            <h3>حقوق الأب</h3>
+                            <ul>
+                                <li>حق الزيارة والتواصل مع الأطفال</li>
+                                <li>حق الولاية الشرعية على الأطفال</li>
+                                <li>حق اتخاذ القرارات المهمة (التعليم، العلاج، السفر)</li>
+                                <li>حق الاعتراض على زواج البنت قبل سن الرشد</li>
+                            </ul>
+                            
+                            <h3>إجراءات رفع دعوى الطلاق</h3>
+                            <ol>
+                                <li>تقديم طلب الطلاق عبر ناجز الإلكتروني</li>
+                                <li>حضور جلسات المحكمة</li>
+                                <li>محاولات الإصلاح من قبل المحكمة</li>
+                                <li>صدور حكم الطلاق</li>
+                                <li>توثيق الطلاق في الأحوال المدنية</li>
+                            </ol>
+                            
+                            <h3>نصائح مهمة</h3>
+                            <ol>
+                                <li>استشر محامياً متخصصاً قبل اتخاذ أي خطوة</li>
+                                <li>احتفظ بجميع الوثائق والمستندات</li>
+                                <li>حاول الحل الودي قبل اللجوء للمحكمة</li>
+                                <li>ضع مصلحة الأطفال في المقام الأول</li>
+                                <li>احرص على التوثيق الرسمي لكل الاتفاقات</li>
+                            </ol>
+                            
+                            <h3>الخلاصة</h3>
+                            <p>قضايا الطلاق والحضانة معقدة وتحتاج إلى فهم عميق للنظام والإجراءات. ننصح دائماً بالاستعانة بمحامٍ متخصص لحماية حقوقك وضمان مصلحة أطفالك.</p>
+                            
+                            <div class="article-footer">
+                                <p><strong>نحن متخصصون في قضايا الأحوال الشخصية. تواصل معنا للحصول على استشارة قانونية متخصصة.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="text-center" data-aos="fade-up">
+                <a href="#" class="btn btn-outline">
+                    عرض جميع المقالات
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">الأسئلة الشائعة</h2>
+                <p class="section-subtitle">إجابات على أكثر الأسئلة تكراراً</p>
+            </div>
+            
+            <div class="faq-container" data-aos="fade-up">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كيف يتم تحديد أتعاب المحاماة؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>يتم تحديد الأتعاب بناءً على عدة عوامل منها: نوع القضية، مدى تعقيدها، الوقت المتوقع لحلها، والمراحل القانونية المطلوبة. نحن نقدم استشارة مبدئية مجانية لتقييم القضية وتحديد الأتعاب بشكل واضح وشفاف قبل البدء.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>ما هي الأوراق المطلوبة لرفع قضية؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>تختلف الأوراق المطلوبة حسب نوع القضية، لكن بشكل عام تشمل: بطاقة الهوية، المستندات المتعلقة بالقضية (عقود، إيصالات، مراسلات)، أي أدلة أو شهادات. سنقوم بإرشادك بدقة حول المستندات المحددة المطلوبة لقضيتك.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كم من الوقت تستغرق القضية المدنية؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>مدة القضية تعتمد على عدة عوامل: نوع القضية، مدى تعقيدها، أعداد الجلسات، إمكانية التسوية الودية. القضايا البسيطة قد تستغرق 3-6 أشهر، بينما القضايا المعقدة قد تمتد لسنة أو أكثر. نحن نعمل على تسريع الإجراءات قدر الإمكان.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>هل يمكنني الحصول على استشارة قانونية عن بعد؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم، نوفر خدمة الاستشارات القانونية عن بعد عبر الهاتف أو الفيديو أو البريد الإلكتروني. يمكنك حجز موعد للاستشارة وسنقوم بالتواصل معك في الوقت المحدد. الاستشارة الأولى مجانية لتقييم قضيتك.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>هل تقدمون خدمة الصلح والتسوية الودية؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم، نحن نشجع دائماً على التسوية الودية قبل اللجوء للمحاكم عندما يكون ذلك ممكناً ومناسباً. نقدم خدمات الوساطة والتفاوض للوصول إلى حلول ترضي جميع الأطراف، مما يوفر الوقت والتكاليف.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>هل تتعاملون مع القضايا الدولية؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نعم، لدينا خبرة في التعامل مع القضايا ذات الطابع الدولي والتعاون مع محامين دوليين عند الحاجة. نقدم استشارات في القانون الدولي وقضايا التجارة الدولية والاستثمار الأجنبي.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">تواصل معنا</h2>
+                <p class="section-subtitle">نحن هنا للإجابة على استفساراتك القانونية</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-left">
+                    <h3>معلومات الاتصال</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>العنوان</h4>
+                            <p>شارع الملك فيصل، برج المحاماة، الطابق 15<br>الرياض، المملكة العربية السعودية</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>الهاتف</h4>
+                            <p dir="ltr">+966 11 123 4567</p>
+                            <p dir="ltr">+966 50 123 4567</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>البريد الإلكتروني</h4>
+                            <p>info@lawfirm.com</p>
+                            <p>contact@lawfirm.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>ساعات العمل</h4>
+                            <p>السبت - الخميس: 9:00 صباحاً - 6:00 مساءً</p>
+                            <p>الجمعة: مغلق</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" data-aos="fade-right" id="contactForm">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> الاسم الكامل</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject"><i class="fas fa-tag"></i> الموضوع</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">اختر نوع الاستشارة</option>
+                            <option value="civil">قانون مدني</option>
+                            <option value="personal">أحوال شخصية</option>
+                            <option value="criminal">قضايا جنائية</option>
+                            <option value="corporate">قضايا الشركات</option>
+                            <option value="labor">قانون العمل</option>
+                            <option value="real-estate">قضايا عقارية</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> الرسالة</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i>
+                        إرسال الرسالة
+                    </button>
+                </form>
+            </div>
+
+            <!-- Google Map -->
+            <div class="map-container" data-aos="fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.2958655704166!2d46.6752957!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1234567890" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>المحامية نوف الثبيتي</span>
+                    </div>
+                    <p class="footer-description">
+                        محامية متخصصة تقدم خدمات قانونية شاملة بأعلى مستويات الاحترافية والنزاهة. ملتزمة بحماية حقوقكم وتحقيق مصالحكم القانونية.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#practice-areas">التخصصات</a></li>
+                        <li><a href="#team">فريق العمل</a></li>
+                        <li><a href="#blog">المدونة</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">خدماتنا</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">القانون المدني</a></li>
+                        <li><a href="#">الأحوال الشخصية</a></li>
+                        <li><a href="#">القضايا الجنائية</a></li>
+                        <li><a href="#">قضايا الشركات</a></li>
+                        <li><a href="#">القضايا العقارية</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">النشرة البريدية</h4>
+                    <p class="footer-newsletter-text">اشترك لتصلك آخر الأخبار والمقالات القانونية</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 المحامية نوف الثبيتي. جميع الحقوق محفوظة</p>
+                <div class="footer-bottom-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <span>|</span>
+                    <a href="#">الشروط والأحكام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/966501234567" class="whatsapp-float" target="_blank" title="تواصل معنا عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Consultation Modal -->
+    <div class="modal" id="consultationModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeConsultationModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="modal-title">طلب استشارة قانونية</h2>
+            <p class="modal-subtitle">املأ النموذج وسأتواصل معك في أقرب وقت</p>
+            <form class="modal-form" id="consultationForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="الاسم الكامل" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+                </div>
+                <div class="form-group">
+                    <select name="consultation-type" required>
+                        <option value="">نوع الاستشارة</option>
+                        <option value="civil">قانون مدني</option>
+                        <option value="personal">أحوال شخصية</option>
+                        <option value="criminal">قضايا جنائية</option>
+                        <option value="corporate">قضايا الشركات</option>
+                        <option value="labor">قانون العمل</option>
+                        <option value="real-estate">قضايا عقارية</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="description" rows="4" placeholder="وصف مختصر للقضية" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-check"></i>
+                    إرسال الطلب
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script src="mobile-enhancements.js"></script>
+</body>
+</html>

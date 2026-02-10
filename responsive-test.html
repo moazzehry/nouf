@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار التجاوب - المحامية نوف الثبيتي</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Tajawal', Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #1a1a2e;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: clamp(24px, 5vw, 42px);
+        }
+        
+        .breakpoint-info {
+            background: #C9A961;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .test-card {
+            background: linear-gradient(135deg, #C9A961, #d4b876);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+        }
+        
+        .test-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .test-btn {
+            padding: 12px 24px;
+            background: #1a1a2e;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        @media (max-width: 768px) {
+            .test-btn {
+                width: 100%;
+            }
+        }
+        
+        .responsive-table {
+            width: 100%;
+            overflow-x: auto;
+            margin: 30px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 500px;
+        }
+        
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: right;
+        }
+        
+        th {
+            background: #1a1a2e;
+            color: white;
+        }
+        
+        .viewport-size {
+            background: #e8f4f8;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .viewport-size code {
+            background: #1a1a2e;
+            color: #C9A961;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🔍 اختبار التجاوب - موقع المحامية نوف الثبيتي</h1>
+        
+        <div class="breakpoint-info" id="breakpoint">
+            جاري تحديد حجم الشاشة...
+        </div>
+        
+        <div class="viewport-size">
+            <strong>حجم النافذة الحالي:</strong><br>
+            <code id="viewportSize">Loading...</code>
+        </div>
+        
+        <h2 style="color: #1a1a2e; margin: 30px 0 20px;">نقاط التوقف (Breakpoints)</h2>
+        
+        <div class="responsive-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>نوع الجهاز</th>
+                        <th>حجم الشاشة</th>
+                        <th>Breakpoint</th>
+                        <th>الحالة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>شاشات كبيرة جداً</td>
+                        <td>1400px وأكبر</td>
+                        <td>≥ 1400px</td>
+                        <td id="status-1400">⚪</td>
+                    </tr>
+                    <tr>
+                        <td>شاشات كبيرة (Desktop)</td>
+                        <td>1200px - 1399px</td>
+                        <td>≥ 1200px</td>
+                        <td id="status-1200">⚪</td>
+                    </tr>
+                    <tr>
+                        <td>لابتوب / تابلت أفقي</td>
+                        <td>992px - 1199px</td>
+                        <td>≥ 992px</td>
+                        <td id="status-992">⚪</td>
+                    </tr>
+                    <tr>
+                        <td>تابلت عمودي</td>
+                        <td>768px - 991px</td>
+                        <td>≥ 768px</td>
+                        <td id="status-768">⚪</td>
+                    </tr>
+                    <tr>
+                        <td>موبايل أفقي</td>
+                        <td>576px - 767px</td>
+                        <td>≥ 576px</td>
+                        <td id="status-576">⚪</td>
+                    </tr>
+                    <tr>
+                        <td>موبايل عمودي</td>
+                        <td>أقل من 576px</td>
+                        <td>&lt; 576px</td>
+                        <td id="status-mobile">⚪</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h2 style="color: #1a1a2e; margin: 30px 0 20px;">اختبار الشبكة (Grid)</h2>
+        <div class="test-grid">
+            <div class="test-card">بطاقة 1</div>
+            <div class="test-card">بطاقة 2</div>
+            <div class="test-card">بطاقة 3</div>
+            <div class="test-card">بطاقة 4</div>
+        </div>
+        
+        <h2 style="color: #1a1a2e; margin: 30px 0 20px;">اختبار الأزرار</h2>
+        <div class="test-buttons">
+            <button class="test-btn">زر 1</button>
+            <button class="test-btn">زر 2</button>
+            <button class="test-btn">زر 3</button>
+        </div>
+        
+        <div style="background: #e8f4f8; padding: 20px; border-radius: 10px; margin-top: 30px;">
+            <h3 style="color: #1a1a2e; margin-bottom: 15px;">✅ التحقق من التجاوب:</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li>✓ جميع العناصر تتكيف مع حجم الشاشة</li>
+                <li>✓ النصوص قابلة للقراءة على جميع الأحجام</li>
+                <li>✓ الأزرار والروابط سهلة النقر</li>
+                <li>✓ لا يوجد تمرير أفقي (horizontal scroll)</li>
+                <li>✓ الصور والوسائط تتكيف بشكل صحيح</li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px; padding: 20px; background: #1a1a2e; color: white; border-radius: 10px;">
+            <p><strong>💡 نصيحة:</strong> اضغط F12 في المتصفح واستخدم أدوات المطور لاختبار أحجام مختلفة</p>
+        </div>
+    </div>
+    
+    <script>
+        function updateBreakpoint() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const breakpointEl = document.getElementById('breakpoint');
+            const viewportEl = document.getElementById('viewportSize');
+            
+            // Update viewport size
+            viewportEl.textContent = `${width}px × ${height}px`;
+            
+            // Reset all statuses
+            ['1400', '1200', '992', '768', '576', 'mobile'].forEach(bp => {
+                const el = document.getElementById(`status-${bp}`);
+                if (el) el.textContent = '⚪';
+            });
+            
+            // Determine breakpoint and update status
+            if (width >= 1400) {
+                breakpointEl.textContent = '🖥️ شاشة كبيرة جداً (Extra Large Desktop) - ≥ 1400px';
+                breakpointEl.style.background = '#4a90e2';
+                document.getElementById('status-1400').textContent = '✅';
+            } else if (width >= 1200) {
+                breakpointEl.textContent = '🖥️ شاشة كبيرة (Large Desktop) - 1200px - 1399px';
+                breakpointEl.style.background = '#5cb85c';
+                document.getElementById('status-1200').textContent = '✅';
+            } else if (width >= 992) {
+                breakpointEl.textContent = '💻 لابتوب / تابلت أفقي (Medium Desktop) - 992px - 1199px';
+                breakpointEl.style.background = '#f0ad4e';
+                document.getElementById('status-992').textContent = '✅';
+            } else if (width >= 768) {
+                breakpointEl.textContent = '📱 تابلت عمودي (Tablet) - 768px - 991px';
+                breakpointEl.style.background = '#d9534f';
+                document.getElementById('status-768').textContent = '✅';
+            } else if (width >= 576) {
+                breakpointEl.textContent = '📱 موبايل أفقي (Mobile Landscape) - 576px - 767px';
+                breakpointEl.style.background = '#9b59b6';
+                document.getElementById('status-576').textContent = '✅';
+            } else {
+                breakpointEl.textContent = '📱 موبايل عمودي (Mobile Portrait) - < 576px';
+                breakpointEl.style.background = '#e74c3c';
+                document.getElementById('status-mobile').textContent = '✅';
+            }
+        }
+        
+        // Update on load and resize
+        updateBreakpoint();
+        window.addEventListener('resize', updateBreakpoint);
+        
+        // Update every 100ms for smooth updates while resizing
+        setInterval(updateBreakpoint, 100);
+    </script>
+</body>
+</html>
