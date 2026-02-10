@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- خلفية ذهبية -->
+  <circle cx="50" cy="50" r="50" fill="#1a1a2e"/>
+  <circle cx="50" cy="50" r="42" fill="#C9A961"/>
+  
+  <!-- ميزان العدالة -->
+  <g transform="translate(50, 52)">
+    <!-- القاعدة -->
+    <rect x="-16" y="22" width="32" height="3" fill="#1a1a2e" rx="1.5"/>
+    <rect x="-2.5" y="8" width="5" height="16" fill="#1a1a2e" rx="1"/>
+    
+    <!-- العمود -->
+    <rect x="-1.5" y="-16" width="3" height="26" fill="#1a1a2e" rx="1.5"/>
+    
+    <!-- الذراع الأفقي -->
+    <rect x="-20" y="-16" width="40" height="2.5" fill="#1a1a2e" rx="1.25"/>
+    
+    <!-- الكفة اليمنى -->
+    <ellipse cx="16" cy="-12" rx="8" ry="1.5" fill="#1a1a2e"/>
+    <path d="M 8,-12 L 8,-4 L 24,-4 L 24,-12" fill="none" stroke="#1a1a2e" stroke-width="1.2"/>
+    <line x1="16" y1="-16" x2="16" y2="-12" stroke="#1a1a2e" stroke-width="1.2"/>
+    
+    <!-- الكفة اليسرى -->
+    <ellipse cx="-16" cy="-12" rx="8" ry="1.5" fill="#1a1a2e"/>
+    <path d="M -24,-12 L -24,-4 L -8,-4 L -8,-12" fill="none" stroke="#1a1a2e" stroke-width="1.2"/>
+    <line x1="-16" y1="-16" x2="-16" y2="-12" stroke="#1a1a2e" stroke-width="1.2"/>
+  </g>
+</svg>
